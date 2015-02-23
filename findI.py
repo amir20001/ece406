@@ -29,13 +29,8 @@ def find(arr, offset):
     if arr[half] > (half + offset):
         return find(left, offset)
     else:
-        re turn find(right, half + offset)
-
-def find2(arr,offset):
-    if arr[half] > (h               alf + offset):
-        return find(left, offset)
-    else:
         return find(right, half + offset)
+
 
 if __name__ == '__main__':
     main()

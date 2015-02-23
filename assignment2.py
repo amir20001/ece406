@@ -88,7 +88,6 @@ def generate_values():
         if r == 1:
             print("p", p)
             print("q", q)
-            print("p-1*q-1", n)
             return N, e, (x % n)
 
 
@@ -108,6 +107,8 @@ def main():
     print("enc", enc)
     dec = modexp(enc, private, N)
     print("dec", dec)
+    if dec == x:
+        print("decoded message was equal to x")
 
 
 if __name__ == '__main__':
