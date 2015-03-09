@@ -50,13 +50,13 @@ def main():
     # (vi) write code to calculate the binary digits of c directly from the coefficients of C, Ccoeff.
     # hint:  You can use (q,r) = divmod(x, 2) to find the quotient and remainder of x when divided by 2
     q = 0
-    bin = []
+    binaryArray = []
     for i in range(len(Ccoeff)):
         real = int(round(Ccoeff[i].real)) + q
         (q, r) = divmod(real, 2)
-        bin.append(r)
-    bin.reverse()
-    print("binary value of c: " , bin)
+        binaryArray.append(r)
+    binaryArray.reverse()
+    print("binary value of c: ", binaryArray)
 
 
 if __name__ == '__main__':
